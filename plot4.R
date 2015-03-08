@@ -23,7 +23,7 @@ plot4 <- function() {
 	axis(1, at=c(0, nrow(pw2)/2, nrow(pw2)), labels=c("Thu", "Fri", "Sat"));
 	axis(2, at=c(0, 10,20,30));
 	box();
-	legend("topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), bty="n",, lty=c(1,1,1), lwd=c(2.5,2.5, 2.5),col=c("black","red", "blue"));
+	legend("topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), bty="n", lty=c(1,1,1), lwd=c(2.5,2.5, 2.5),col=c("black","red", "blue"));
 
 	plot(as.numeric(as.character(pw2$Global_reactive_power)), type="l", ylab="Global_reactive_power", axes=F, xlab="datetime");
 	axis(1, at=c(0, nrow(pw2)/2, nrow(pw2)), labels=c("Thu", "Fri", "Sat"));
